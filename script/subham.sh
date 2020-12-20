@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt update && apt upgrade
+sudo apt-get update && sudo apt-get dist-upgrade
 sublimetext
 brave
 teamviewer
