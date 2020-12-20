@@ -107,6 +107,16 @@ xfce4_terminal(){
 	sudo apt-get update -y
 	sudo apt-get install -y xfce4-terminal
 }
+cool_retro_term(){
+	sudo add-apt-repository ppa:vantuz/cool-retro-term
+	sudo apt-get update
+	sudo apt-get install cool-retro-term
+}
+openshot(){
+	sudo add-apt-repository ppa:openshot.developers/ppa
+	sudo apt-get update
+	sudo apt-get install openshot-qt
+}
 gnome_tweaks(){
 	sudo apt-get update
 	sudo apt-add-repository universe
