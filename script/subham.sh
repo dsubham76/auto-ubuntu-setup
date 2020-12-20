@@ -1,6 +1,23 @@
 #!/bin/bash
 
 sudo apt update && apt upgrade
+sublimetext
+brave
+teamviewer
+terminator
+xterm
+xfce4_terminal
+gnome_tweaks
+obs_studio
+vs_code
+htop
+gimp
+git
+pip2
+ipython
+okular
+anydesk
+vim
 sublimetext(){
 	wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 	echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
@@ -85,4 +102,15 @@ anydesk(){
 	echo "deb http://deb.anydesk.com/ all main" | sudo tee /etc/apt/sources.list.d/anydesk-stable.list
 	sudo apt update
 	sudo apt install anydesk
+}
+vim(){
+	sudo apt-get install libncurses5-dev libncursesw5-dev
+	sudo apt install make
+	sudo apt install build-essential
+	sudo git clone https://github.com/vim/vim.git
+	cd vim/src
+	sudo make
+	sudo make install
+	cd ~/
+	# sudo apt remove vim
 }
