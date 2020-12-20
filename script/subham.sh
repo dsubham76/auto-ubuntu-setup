@@ -1,12 +1,29 @@
 #!/bin/bash
 
 sudo apt-get update && sudo apt-get dist-upgrade
+canonical_livepatch
+problem_reporting
+net_tools
+vlc
+media_codecs
+gnome_extensions
+archive
+wine
+laptop_mode_tools
+timeshift
+midnight_commander
+uget
+tlp
+playonlinux
+ubuntu_cleaner
 sublimetext
 brave
 teamviewer
 terminator
 xterm
 xfce4_terminal
+cool_retro_term
+openshot
 gnome_tweaks
 obs_studio
 vs_code
@@ -28,6 +45,10 @@ canonical_livepatch(){
 problem_reporting(){
 	sudo apt update
 	sudo apt install apport
+}
+net_tools(){
+	sudo apt update
+	sudo apt install net-tools -y
 }
 vlc(){
 	sudo snap install vlc
@@ -58,6 +79,11 @@ midnight_commander(){
 	sudo add-apt-repository universe
 	sudo apt update
 	sudo apt install mc
+}
+uget(){
+	sudo add-apt-repository ppa:plushuang-tw/uget-stable
+	sudo apt-get update
+	sudo apt install uget
 }
 tlp(){
 	sudo apt install tlp tlp-rdw
