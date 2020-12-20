@@ -18,6 +18,34 @@ ipython
 okular
 anydesk
 vim
+
+canonical_livepatch(){
+	sudo apt update
+	sudo apt install snapd
+	sudo snap install canonical-livepatch
+	sudo canonical-livepatch enable xxxxc4xxxx67xxxxbxxxxbxxxxfbxx4e
+}
+problem_reporting(){
+	sudo apt update
+	sudo apt install apport
+}
+vlc(){
+	sudo snap install vlc
+}
+media_codecs(){
+	sudo apt install ubuntu-restricted-extras
+}
+gnome_extensions(){
+	sudo apt update
+	sudo apt install chrome-gnome-shell
+	sudo apt install firefox-gnome-shell
+}
+archive(){
+	sudo apt install rar unrar p7zip-full p7zip-rar
+}
+wine(){
+	sudo apt install wine-stable
+}
 sublimetext(){
 	wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 	echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
